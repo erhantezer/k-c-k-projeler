@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background-color: black;
+        }
+        .move{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(236, 9, 9);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="move"></div>
+    </div>
+    <button class="btn">check</button>
+    <script>
+        let move = document.querySelector(".move");
+        let button = document.querySelector(".btn");
+
+        button.addEventListener("click", function(){
+        var position=0;
+        
+     
+     speed = setInterval(repeat,5);
+     function repeat(){
+         if(position==350){
+             clearInterval(speed)
+         }else{
+             position++;
+             move.style.top=position+"px";
+             move.style.left=position+"px";
+         }
+        } 
+     })
+    </script>
+</body>
+</html>
