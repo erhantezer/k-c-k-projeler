@@ -25,7 +25,7 @@ btns.forEach(function (btn) {
             count = 0;
     }
 
-
+//? burada count durumuna göre şart gerçekleşeck ve span içerisindeki değer renk değiştirecek
     if (count > 0) {
         value.style.color = "green";
     }
