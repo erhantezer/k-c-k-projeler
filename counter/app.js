@@ -6,16 +6,16 @@ const btns = document.querySelectorAll(".btn");
 
 btns.forEach(function (btn) {
 
-    btn.addEventListener("click", function (e){
+    btn.addEventListener("click", function (event){
     // console.log(e);
-    const styles = e.target.classList;
+    const styles = event.target.classList;
     console.log(styles);
 
     if (styles.contains("decrease")){
         count--;
     } else if (styles.contains("increase")){
        count++;
-    } else {
+    } else if (styles.contains("reset")) {
             count = 0;
     }
 

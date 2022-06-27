@@ -145,11 +145,11 @@ p {
     width: 95vw;
   }
 }
-main {
+/* main {
   min-height: 100vh;
   display: grid;
   place-items: center;
-}
+} */
 
 /*
 =============== 
